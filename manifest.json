@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Page ZOOM Man",
+  "version": "1.0",
+  "description": "Zoom a page with your right hand on your mouse.",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
